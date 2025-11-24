@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículum de Nombre Apellido</title>
+
+  <!-- Tipografía legible -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- CABECERA: H1 = NOMBRE (como en el artículo) -->
+  <header class="header" role="banner">
+    <div class="header-main">
+      <p class="header-label">Currículum vitae</p>
+      <h1>Nombre Apellido</h1>
+      <p class="header-role">Rol o título profesional (por ejemplo: Desarrollador Web)</p>
+    </div>
+
+    <div class="access-controls" role="group" aria-label="Opciones de accesibilidad">
+      <button id="increaseText" aria-label="Aumentar tamaño del texto">A+</button>
+      <button id="decreaseText" aria-label="Disminuir tamaño del texto">A−</button>
+      <button id="toggleContrast" aria-label="Cambiar contraste de la página">Contraste</button>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <!-- INFORMACIÓN DE CONTACTO -->
+    <section aria-labelledby="contacto">
+      <h2 id="contacto">Información de contacto</h2>
+
+      <img
+        src="foto.png"
+        alt="Retrato de Nombre Apellido"
+        class="profile-img"
+      />
+
+      <p><strong>Correo electrónico:</strong>
+        <a href="mailto:tu.correo@example.com">
+          tu.correo@example.com
+        </a>
+      </p>
+
+      <p><strong>LinkedIn:</strong>
+        <a href="https://linkedin.com/in/tuusuario" aria-label="Ver perfil profesional de Nombre Apellido en LinkedIn">
+          Ver perfil en LinkedIn
+        </a>
+      </p>
+
+      <p><strong>GitHub:</strong>
+        <a href="https://github.com/tuusuario" aria-label="Ver repositorios de Nombre Apellido en GitHub">
+          Ver mis proyectos en GitHub
+        </a>
+      </p>
+
+      <p><strong>Ubicación:</strong> Ciudad, País</p>
+    </section>
+
+    <!-- PERFIL PROFESIONAL (texto claro, sin abreviaturas raras) -->
+    <section aria-labelledby="perfil">
+      <h2 id="perfil">Perfil profesional</h2>
+      <p>
+        Desarrollador Web con experiencia en creación de interfaces claras, accesibles y fáciles de mantener.
+        Diseño y desarrollo sitios que funcionan bien con tecnologías de asistencia, tienen buena estructura de contenido
+        y son fáciles de leer para personas con diferentes necesidades.
+      </p>
+    </section>
+
+    <!-- EXPERIENCIA (estructura lineal: título, empresa, fechas, descripción) -->
+    <section aria-labelledby="experiencia">
+      <h2 id="experiencia">Experiencia profesional</h2>
+
+      <!-- Puesto 1 -->
+      <article aria-labelledby="exp1-titulo">
+        <h3 id="exp1-titulo">Desarrollador Frontend</h3>
+        <h4>Empresa Ejemplo — Marzo 2023 a la fecha</h4>
+        <p>
+          Desarrollo de interfaces para aplicaciones web, con foco en accesibilidad y rendimiento.
+        </p>
+        <ul>
+          <li>
+            Implementé componentes accesibles (navegación por teclado, foco visible, texto alternativo).
+          </li>
+          <li>
+            Trabajé con el equipo de diseño para mejorar la legibilidad y reducir la densidad de texto.
+          </li>
+          <li>
+            Optimicé formularios para que fueran más claros y fáciles de completar.
+          </li>
+        </ul>
+      </article>
+
+      <!-- Puesto 2 -->
+      <article aria-labelledby="exp2-titulo">
+        <h3 id="exp2-titulo">Práctica profesional en Desarrollo Web</h3>
+        <h4>Organización Universidad — Agosto 2022 a Enero 2023</h4>
+        <p>
+          Colaboré en el desarrollo de un sistema interno de gestión con buenas prácticas de accesibilidad.
+        </p>
+        <ul>
+          <li>Reorganicé pantallas para evitar el uso de tablas como maquetación.</li>
+          <li>Reemplacé enlaces genéricos por enlaces descriptivos.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- EXPERIENCIA ACADÉMICA -->
+    <section aria-labelledby="aca">
+      <h2 id="aca">Experiencia académica y proyectos</h2>
+
+      <article aria-labelledby="proj1-titulo" class="card">
+        <h3 id="proj1-titulo">Proyecto: Plataforma de reservas accesible</h3>
+        <h4>Universidad Ejemplo — 2024</h4>
+        <p>
+          Desarrollo de una plataforma para reservar horas en línea, diseñada con criterios de accesibilidad desde el inicio.
+        </p>
+        <ul>
+          <li>Ningún elemento de maquetación estaba basado en tablas.</li>
+          <li>Todos los textos siguieron una jerarquía clara de encabezados.</li>
+          <li>Los enlaces describían claramente su destino o acción.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section aria-labelledby="skills">
+      <h2 id="skills">Habilidades</h2>
+
+      <h3>Habilidades técnicas</h3>
+      <ul>
+        <li>HTML5 semántico (estructura con encabezados H1 a H4).</li>
+        <li>CSS responsivo y accesible.</li>
+        <li>JavaScript y React.</li>
+        <li>Buenas prácticas de accesibilidad según WCAG.</li>
+      </ul>
+
+      <h3>Habilidades blandas</h3>
+      <ul>
+        <li>Comunicación clara (sin abreviaturas confusas).</li>
+        <li>Trabajo en equipo.</li>
+        <li>Organización y atención al detalle.</li>
+      </ul>
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section aria-labelledby="edu">
+      <h2 id="edu">Educación</h2>
+      <article>
+        <h3>Título o carrera</h3>
+        <h4>Universidad Ejemplo — 2020 a 2024</h4>
+        <p>
+          Resumen breve de la carrera o especialización. Incluye énfasis en accesibilidad, usabilidad o desarrollo web si aplica.
+        </p>
+      </article>
+    </section>
+
+    <!-- VIDEO ACCESIBLE (opcional para tu tarea) -->
+    <section aria-labelledby="video">
+      <h2 id="video">Presentación en video</h2>
+
+      <video width="500" controls aria-describedby="transcripcion-video">
+        <source src="presentacion.mp4" type="video/mp4" />
+        <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default />
+        Tu navegador no soporta video HTML5.
+      </video>
+
+      <details id="transcripcion-video">
+        <summary>Leer la transcripción del video</summary>
+        <p>
+          Aquí escribes la transcripción completa de lo que dices en el video. Esto ayuda
+          a personas que no pueden escuchar el audio o prefieren leer el contenido.
+        </p>
+      </details>
+    </section>
+
+    <!-- REFERENCIAS -->
+    <section aria-labelledby="ref">
+      <h2 id="ref">Referencias</h2>
+      <p>Disponibles a solicitud.</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
