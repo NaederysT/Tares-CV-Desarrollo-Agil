@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Currículum de Nombre Apellido</title>
+  <title>Currículum de Nadine Díaz Hermosilla</title>
 
   <!-- Tipografía legible -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -11,12 +11,12 @@
 </head>
 
 <body>
-  <!-- CABECERA: H1 = NOMBRE (como en el artículo) -->
+  <!-- CABECERA: H1 = NOMBRE -->
   <header class="header" role="banner">
     <div class="header-main">
       <p class="header-label">Currículum vitae</p>
-      <h1>Nombre Apellido</h1>
-      <p class="header-role">Rol o título profesional (por ejemplo: Desarrollador Web)</p>
+      <h1>Nadine Díaz Hermosilla</h1>
+      <p class="header-role">Estudiante de Ingeniería en Informática</p>
     </div>
 
     <div class="access-controls" role="group" aria-label="Opciones de accesibilidad">
@@ -31,95 +31,141 @@
     <section aria-labelledby="contacto">
       <h2 id="contacto">Información de contacto</h2>
 
-      <img
-        src="foto.png"
-        alt="Retrato de Nombre Apellido"
-        class="profile-img"
-      />
-
       <p><strong>Correo electrónico:</strong>
-        <a href="mailto:tu.correo@example.com">
-          tu.correo@example.com
+        <a href="mailto:ndiazh@utem.com">
+          ndiazh@utem.com
         </a>
       </p>
 
       <p><strong>LinkedIn:</strong>
-        <a href="https://linkedin.com/in/tuusuario" aria-label="Ver perfil profesional de Nombre Apellido en LinkedIn">
-          Ver perfil en LinkedIn
+        <a href="https://www.linkedin.com/in/naederys/" aria-label="Ver perfil profesional de Nadine Díaz Hermosilla en LinkedIn">
+          Nadine Díaz Hermosilla
         </a>
       </p>
 
       <p><strong>GitHub:</strong>
-        <a href="https://github.com/tuusuario" aria-label="Ver repositorios de Nombre Apellido en GitHub">
-          Ver mis proyectos en GitHub
+        <a href="https://github.com/NaederysT" aria-label="Ver repositorios de Nadine Díaz Hermosilla en GitHub">
+          NaederysT
         </a>
       </p>
 
-      <p><strong>Ubicación:</strong> Ciudad, País</p>
+      <p><strong>Ubicación:</strong> Ciudad: Santiago, País: Chile</p>
     </section>
 
-    <!-- PERFIL PROFESIONAL (texto claro, sin abreviaturas raras) -->
+    <!-- PERFIL PROFESIONAL -->
     <section aria-labelledby="perfil">
       <h2 id="perfil">Perfil profesional</h2>
       <p>
-        Desarrollador Web con experiencia en creación de interfaces claras, accesibles y fáciles de mantener.
-        Diseño y desarrollo sitios que funcionan bien con tecnologías de asistencia, tienen buena estructura de contenido
-        y son fáciles de leer para personas con diferentes necesidades.
+        Soy Nadine Díaz, actualmente estudio Ingeniería en Informática en la Universidad Tecnológica Metropolitana.
+        Soy programadora/desarrolladora entusiasta, con conocimientos básicos en desarrollo web y accesibilidad digital.
+        También tengo un gran interés por el análisis de datos, por lo que manejo herramientas como Python y SQL.
       </p>
     </section>
 
-    <!-- EXPERIENCIA (estructura lineal: título, empresa, fechas, descripción) -->
-    <section aria-labelledby="experiencia">
-      <h2 id="experiencia">Experiencia profesional</h2>
+    <!-- EXPERIENCIA PROFESIONAL -->
+    <section aria-labelledby="exp-profesional">
+      <h2 id="exp-profesional">Experiencia profesional</h2>
 
-      <!-- Puesto 1 -->
-      <article aria-labelledby="exp1-titulo">
-        <h3 id="exp1-titulo">Desarrollador Frontend</h3>
-        <h4>Empresa Ejemplo — Marzo 2023 a la fecha</h4>
+      <!-- Ayudante de investigación -->
+      <article aria-labelledby="exp-prof-1" class="card">
+        <h3 id="exp-prof-1">Ayudante de investigación en Electromagnetismo</h3>
+        <h4>Universidad / Laboratorio de Electromagnetismo — 2025 a la fecha</h4>
         <p>
-          Desarrollo de interfaces para aplicaciones web, con foco en accesibilidad y rendimiento.
+          Apoyo en investigación en electromagnetismo utilizando simulaciones micromagnéticas
+          para comprender el comportamiento de dispositivos magnéticos y magnetoelásticos.
         </p>
         <ul>
           <li>
-            Implementé componentes accesibles (navegación por teclado, foco visible, texto alternativo).
+            Uso de <strong>mumax3</strong> para realizar simulaciones micromagnéticas y análisis de resultados.
           </li>
           <li>
-            Trabajé con el equipo de diseño para mejorar la legibilidad y reducir la densidad de texto.
+            Colaboración en equipo para el diseño y estudio de tecnologías futuras basadas en materiales magnéticos.
           </li>
           <li>
-            Optimicé formularios para que fueran más claros y fáciles de completar.
+            Documentación clara y ordenada de experimentos, parámetros de simulación y conclusiones.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- EXPERIENCIA LABORAL -->
+    <section aria-labelledby="exp-laboral">
+      <h2 id="exp-laboral">Experiencia laboral</h2>
+
+      <!-- Ideal -->
+      <article aria-labelledby="exp-lab-1" class="card">
+        <h3 id="exp-lab-1">Vendedora</h3>
+        <h4>Ideal — 2018 a 2022</h4>
+        <p>
+          Gestión de ventas, reposición de productos y control simple de indicadores de desempeño en punto de venta.
+        </p>
+        <ul>
+          <li>
+            Reposición de mercadería y control de stock en sala.
+          </li>
+          <li>
+            Cálculo del dinero asociado a entrada de mercadería, ventas y merma
+            (productos en mal estado o vencidos).
+          </li>
+          <li>
+            Seguimiento de metas semanales y mensuales, ajustando la reposición según la demanda.
+          </li>
+          <li>
+            Atención directa a clientes, manteniendo un trato respetuoso y claro.
           </li>
         </ul>
       </article>
 
-      <!-- Puesto 2 -->
-      <article aria-labelledby="exp2-titulo">
-        <h3 id="exp2-titulo">Práctica profesional en Desarrollo Web</h3>
-        <h4>Organización Universidad — Agosto 2022 a Enero 2023</h4>
+      <!-- CineHoyts / Cinépolis -->
+      <article aria-labelledby="exp-lab-2" class="card">
+        <h3 id="exp-lab-2">Cajera</h3>
+        <h4>CineHoyts (hoy Cinépolis) — 2017 a 2018</h4>
         <p>
-          Colaboré en el desarrollo de un sistema interno de gestión con buenas prácticas de accesibilidad.
+          Atención de público y venta de entradas y productos en un entorno de alta afluencia de personas.
         </p>
         <ul>
-          <li>Reorganicé pantallas para evitar el uso de tablas como maquetación.</li>
-          <li>Reemplacé enlaces genéricos por enlaces descriptivos.</li>
+          <li>Manejo de caja y medios de pago de forma responsable.</li>
+          <li>
+            Entrega de información clara sobre funciones, promociones y servicios disponibles.
+          </li>
+          <li>
+            Trabajo en equipo para mantener tiempos de atención adecuados y buena experiencia de los clientes.
+          </li>
+        </ul>
+      </article>
+
+      <!-- KFC -->
+      <article aria-labelledby="exp-lab-3" class="card">
+        <h3 id="exp-lab-3">Cajera</h3>
+        <h4>KFC — 2016 a 2017</h4>
+        <p>
+          Atención de clientes en caja y apoyo en tareas generales del local.
+        </p>
+        <ul>
+          <li>Cobro y registro de pedidos de forma precisa.</li>
+          <li>Resolución de dudas y apoyo al cliente durante su compra.</li>
+          <li>
+            Coordinación con el equipo de cocina para mantener un flujo de trabajo ordenado.
+          </li>
         </ul>
       </article>
     </section>
 
     <!-- EXPERIENCIA ACADÉMICA -->
     <section aria-labelledby="aca">
-      <h2 id="aca">Experiencia académica y proyectos</h2>
+      <h2 id="aca">Experiencia académica y proyecto</h2>
 
       <article aria-labelledby="proj1-titulo" class="card">
-        <h3 id="proj1-titulo">Proyecto: Plataforma de reservas accesible</h3>
-        <h4>Universidad Ejemplo — 2024</h4>
+        <h3 id="proj1-titulo">QA para sistema de automatización de pacientes</h3>
+        <h4>Clínica Las Mercedes, Melipilla — 2025</h4>
         <p>
-          Desarrollo de una plataforma para reservar horas en línea, diseñada con criterios de accesibilidad desde el inicio.
+          Trabajo como QA con una pyme en el desarrollo de un sistema para automatizar
+          la gestión de pacientes de una clínica dental.
         </p>
         <ul>
-          <li>Ningún elemento de maquetación estaba basado en tablas.</li>
-          <li>Todos los textos siguieron una jerarquía clara de encabezados.</li>
-          <li>Los enlaces describían claramente su destino o acción.</li>
+          <li>Diseño y ejecución de casos de prueba funcionales para el flujo de reserva y atención de pacientes.</li>
+          <li>Reporte de incidencias y seguimiento de correcciones junto al equipo de desarrollo.</li>
+          <li>Revisión de la interfaz con foco en claridad de contenido y experiencia de usuario.</li>
         </ul>
       </article>
     </section>
@@ -128,57 +174,112 @@
     <section aria-labelledby="skills">
       <h2 id="skills">Habilidades</h2>
 
-      <h3>Habilidades técnicas</h3>
+      <!-- Desarrollo web -->
+      <h3>Desarrollo web</h3>
       <ul>
-        <li>HTML5 semántico (estructura con encabezados H1 a H4).</li>
-        <li>CSS responsivo y accesible.</li>
-        <li>JavaScript y React.</li>
-        <li>Buenas prácticas de accesibilidad según WCAG.</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
       </ul>
 
+      <!-- Programación y bases de datos -->
+      <h3>Programación y bases de datos</h3>
+      <ul>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>SQL</li>
+      </ul>
+
+      <!-- Análisis y ciencia de datos -->
+      <h3>Análisis y ciencia de datos</h3>
+      <ul>
+        <li>Jupyter Notebooks</li>
+        <li>NumPy</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+        <li>Scikit-learn (sklearn)</li>
+      </ul>
+
+      <!-- Ofimática y herramientas de productividad -->
+      <h3>Ofimática y herramientas de productividad</h3>
+      <ul>
+        <li>Microsoft Excel</li>
+        <li>Microsoft Word</li>
+      </ul>
+
+      <!-- Redes y seguridad -->
+      <h3>Redes y seguridad</h3>
+      <ul>
+        <li>Cisco Packet Tracer</li>
+        <li>Nmap</li>
+      </ul>
+
+      <!-- Diseño y colaboración -->
+      <h3>Diseño y colaboración</h3>
+      <ul>
+        <li>Canva</li>
+        <li>Miro (pizarra online)</li>
+      </ul>
+
+      <!-- Modelado y dibujo técnico -->
+      <h3>Modelado y dibujo técnico</h3>
+      <ul>
+        <li>AutoCAD</li>
+      </ul>
+
+      <!-- Habilidades blandas -->
       <h3>Habilidades blandas</h3>
       <ul>
-        <li>Comunicación clara (sin abreviaturas confusas).</li>
-        <li>Trabajo en equipo.</li>
-        <li>Organización y atención al detalle.</li>
+        <li>Comunicación clara</li>
+        <li>Trabajo en equipo</li>
+        <li>Organización y atención al detalle</li>
+      </ul>
+    </section>
+
+    <!-- CERTIFICACIONES Y CURSOS -->
+    <section aria-labelledby="cert">
+      <h2 id="cert">Certificaciones y cursos</h2>
+      <ul>
+        <li>
+          Curso de Python – OpenAcademy, Banco Santander  
+          <span>(finalizado el 1 de abril de 2025)</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- IDIOMAS -->
+    <section aria-labelledby="idiomas">
+      <h2 id="idiomas">Idiomas</h2>
+      <ul>
+        <li>Español – Nativo</li>
+        <li>Inglés – A1</li>
       </ul>
     </section>
 
     <!-- EDUCACIÓN -->
     <section aria-labelledby="edu">
       <h2 id="edu">Educación</h2>
-      <article>
-        <h3>Título o carrera</h3>
-        <h4>Universidad Ejemplo — 2020 a 2024</h4>
+
+      <!-- Universidad -->
+      <article aria-labelledby="edu-uni" class="card">
+        <h3 id="edu-uni">Ingeniería en Informática</h3>
+        <h4>Universidad Tecnológica Metropolitana — 2022 a la fecha</h4>
         <p>
-          Resumen breve de la carrera o especialización. Incluye énfasis en accesibilidad, usabilidad o desarrollo web si aplica.
+          Estudiante de Ingeniería en Informática, con interés en desarrollo web, accesibilidad digital
+          y análisis de datos.
         </p>
       </article>
-    </section>
 
-    <!-- VIDEO ACCESIBLE (opcional para tu tarea) -->
-    <section aria-labelledby="video">
-      <h2 id="video">Presentación en video</h2>
-
-      <video width="500" controls aria-describedby="transcripcion-video">
-        <source src="presentacion.mp4" type="video/mp4" />
-        <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default />
-        Tu navegador no soporta video HTML5.
-      </video>
-
-      <details id="transcripcion-video">
-        <summary>Leer la transcripción del video</summary>
+      <!-- Colegio -->
+      <article aria-labelledby="edu-escuela" class="card">
+        <h3 id="edu-escuela">Enseñanza básica y media</h3>
+        <h4>Colegio Arturo Toro Amor — 2002 a 2014</h4>
         <p>
-          Aquí escribes la transcripción completa de lo que dices en el video. Esto ayuda
-          a personas que no pueden escuchar el audio o prefieren leer el contenido.
+          Educación básica y media completa en el Colegio Arturo Toro Amor.
         </p>
-      </details>
-    </section>
-
-    <!-- REFERENCIAS -->
-    <section aria-labelledby="ref">
-      <h2 id="ref">Referencias</h2>
-      <p>Disponibles a solicitud.</p>
+      </article>
     </section>
 
   </main>
